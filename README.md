@@ -36,7 +36,9 @@ The HTML:
         ...
         ...
 
-The thead and tbody tags must be used.
+The thead and tbody tags must be used. Multiple tbody elements will be sorted
+separately and not relative to the rows in other tbody elements. To skip
+individual tbody elements when sorting, add the `sort-ignore` class.
 
 Add a `data-sort` attribute of "DATATYPE" to the th elements to make them sortable
 by that data type. If you don't want that column to be sortable, just omit the
